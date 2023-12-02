@@ -89,6 +89,12 @@ mod tests {
     }
 
     #[test]
+    fn part1_answer() {
+        let input = include_str!(concat!(env!("CARGO_MANIFEST_DIR"), "/inputs/day1.txt"));
+        assert_eq!(part1(input), "55834");
+    }
+
+    #[test]
     fn part2_example() {
         let input = r#"
         two1nine
@@ -100,5 +106,11 @@ mod tests {
         7pqrstsixteen
     "#;
         assert_eq!(part2(input), "281");
+    }
+
+    #[test]
+    fn part2_answer() {
+        let input = include_str!(concat!(env!("CARGO_MANIFEST_DIR"), "/inputs/day1.txt"));
+        assert_eq!(part2(input), "53221");
     }
 }
